@@ -1,0 +1,31 @@
+{
+  "name": "extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "transcribe.js",
+  "scripts": {
+    "test": "TEST=true nyc --reporter=text mocha transcribe.test.js",
+    "test:watch": "nodemon --exec npm t",
+    "lint": "eslint transcribe.js",
+    "minify": "terser --compress -m -o build/bookmarklet.js -- transcribe.js",
+    "wrap": "echo 'javascript:(()=>{'$(cat build/bookmarklet.js)'})()' > build/bookmarklet",
+    "cleanup": "rm build/bookmarklet.js",
+    "build": "npm run minify && npm run wrap && npm run cleanup",
+    "builder": "docker-compose up --build"
+  },
+  "author": "Jason Ghent",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "eslint": "^6.7.2",
+    "jsdom": "^15.2.1",
+    "minifyjs": "^0.2.0",
+    "mocha": "^6.2.2",
+    "nodemon": "^2.0.3",
+    "nyc": "^14.1.1",
+    "supervisor": "^0.12.0",
+    "terser": "^4.6.11",
+    "uglify-js": "^3.9.1",
+    "uglifyjs": "^2.4.11"
+  }
+}

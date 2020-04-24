@@ -1,0 +1,4 @@
+node_modules
+*.sw[o|p]
+coverage
+.nyc_output

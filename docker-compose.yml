@@ -1,0 +1,6 @@
+version: "3"
+services:
+  bookmarklet:
+    build: .
+    volumes:
+      - $PWD/build:/app/build

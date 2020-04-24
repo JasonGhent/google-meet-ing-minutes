@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Transcribe",
+  "version": "1.0",
+
+  "description": "Transcribes meetings with automatic captions.",
+
+  "icons": {
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://meet.google.com/*"],
+      "js": ["transcribe.js"]
+    }
+  ]
+}
