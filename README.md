@@ -21,6 +21,10 @@ Once someone speaks, you will see an ugly button to download the transcript of t
 
 The logic for caption stitching is clearly broken. **PRs are welcome.**
 
+#### Testing
+To test inline instead of as a bookmarklet, just load this entire directory as
+an unpacked web extension.
+
 #### Related
 
 https://support.google.com/hangouts/thread/11396560?hl=en
