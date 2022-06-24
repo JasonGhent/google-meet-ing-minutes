@@ -17,7 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "eslint": "^6.7.2",
-    "jsdom": "^15.2.1",
+    "jsdom": "^16.5.0",
     "mocha": "^7.1.1",
     "nodemon": "^2.0.3",
     "nyc": "^14.1.1",
