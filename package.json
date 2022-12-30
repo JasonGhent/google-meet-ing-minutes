@@ -18,7 +18,7 @@
   "dependencies": {
     "eslint": "^6.7.2",
     "jsdom": "^15.2.1",
-    "mocha": "^7.1.1",
+    "mocha": "^10.2.0",
     "nodemon": "^2.0.3",
     "nyc": "^14.1.1",
     "terser": "^4.6.11"
